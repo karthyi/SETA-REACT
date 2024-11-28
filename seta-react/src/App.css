@@ -1,5 +1,6 @@
 
 body {
+    font-family: 'Roboto', sans-serif; /* Updated to modern font */
   background: rgb(182, 185, 214);
   margin: 0;
   padding: 0;

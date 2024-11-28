@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
+import Footer from './Footer';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './Home.css'
+import banner from '../assets/Banner.png';
 
 // Mock data para exemplo (será substituído pelo banco de dados)
 const mockServices = {
@@ -81,20 +83,22 @@ function Home() {
       <main>
         {/* Banner para anúncios */}
         <div className="banner">
-          <div className="banner-content">
-            <h1>Encontre os melhores serviços</h1>
-            <p>Profissionais qualificados para todas as suas necessidades</p>
-          </div>
+          <a href="https://example.com">
+            <img src={banner} alt="Banner" />
+          </a>
         </div>
 
         {/* Seções de serviços */}
         <div className="services-container">
           <ServiceSection title="Serviços Populares" services={mockServices.popular} />
           <ServiceSection title="Recomendados para Você" services={mockServices.recommended} />
+          <ServiceSection title="Serviços em Destaque" services={mockServices.popular} />
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }
+
 
 export default Home;

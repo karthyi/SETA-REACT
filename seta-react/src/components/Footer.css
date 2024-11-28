@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.footer {
+    font-family: 'Roboto', sans-serif; /* Updated to modern font */
+    background: #2f66ad; /* Background color for the footer */
+    color: white;
+    padding: 1rem 0; /* Adjusted padding */
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-around; /* Space out elements */
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+}
+
+.contact-info, .social-media, .copyright, .additional-links {
+    margin: 0 1rem; /* Adjust margin for horizontal layout */
+}
+
+h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Adjusted font size */
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+    color: #a0c4ff;
+    transform: scale(1.1);
+    text-decoration: underline;
+} 
+
+.social-media a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.social-media i {
+    margin-right: 0.5rem; /* Space between icon and text */
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover i {
+    transform: rotate(360deg); /* Rotate icon on hover */
+}
+
+.additional-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between additional links */
+}
+
+.additional-links a {
+    font-size: 0.9rem;
+}
+
+.additional-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

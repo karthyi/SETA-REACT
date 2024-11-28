@@ -1,5 +1,6 @@
 
 body {
+    font-family: 'Roboto', sans-serif; /* Updated to modern font */
   margin: 0;
   padding: 0;
   padding-top: 3.7%;
@@ -44,10 +45,20 @@ body {
   }
 }
 
-a img {
+#logo {
   margin-left: 1%;
   width: 120px;
   font-size: 500px;
+}
+
+#logo:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#logo:not(:hover){
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .search_fil {
@@ -181,14 +192,24 @@ a img {
       } 
 }
 
+.fa-bell {
+  color: white;
+  font-size: 35px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .fa-bell:hover {
   color: rgb(143, 181, 238);
   font-size: 35px;
   margin-left: 15px;
   animation: bounce 0.5s infinite alternate;
-  -webkit-animation: bounce 0.5s infinite alternate; 
-  
+  -webkit-animation: bounce 0.5s infinite alternate;
+  transition: all 0.3s ease;
 }
+  
+
 
 
 .fa-cart-shopping:hover{

@@ -1,122 +1,132 @@
-    body{
-        background: linear-gradient(to bottom, rgb(142, 216, 206), rgb(63, 122, 201), rgb(182, 185, 214));
+body {
+    background: linear-gradient(to bottom, #11b9ab, #1b3d9b,#bec2e9, #bbbfe2);
+    width: 100%;
 
-    }
+}
 
-    .home {
-      width: 100%;
-    }
+.banner a {
+    transform: none;
+}
 
-    .banner {
-      width: 100%;
-      height: 300px;
-      background: linear-gradient(45deg, #4663E6, #6983ff);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+.banner {
+    margin: 2rem auto;
+    width: 80%;
+    height: 300px;
+    background: #461484;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #eee solid 1px;
+    border-radius: 20px;
 
-    .banner-content h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
+}
 
-    .services-container {
-      padding: 0 2rem;
-    }
+.banner img {
+    width: 75%;
+    height: 90%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
 
-    .service-section {
-      margin-bottom: 3rem;
-    }
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
 
-    .service-section h2 {
-      margin-bottom: 1.5rem;
-      color: #333;
-    }
+.services-container {
+    padding: 0 2rem;
+}
 
-    .service-scroll {
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
+.service-section {
+    margin-bottom: 3rem;
+}
 
-    .service-container {
-      display: flex;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-      gap: 1.5rem;
-      padding: 1rem 0;
-    }
+.service-section h2 {
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
 
-    .service-card {
-      min-width: 250px;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 1rem;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
+.service-scroll {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
-    .service-card:hover {
-      transform: translateY(-5px);
-    }
+.service-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
 
-    .service-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 4px;
-      margin-bottom: 1rem;
-    }
+.service-card {
+    min-width: 250px;
+    border: 1px solid #eee;
+    border-radius: 2vw;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
 
-    .service-card h3 {
-      color: #333;
-      margin-bottom: 0.5rem;
-    }
+.service-card:hover {
+    transform: translateY(-5px);
+}
 
-    .service-card p {
-      color: #666;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
 
-    .service-card .price {
-      color: #4663E6;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
+.service-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
 
-    .scroll-button {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: rgb(34, 73, 179);
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 1;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+.service-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
 
-    .scroll-button:hover {
-      background: #3257a8;
-    }
+.service-card .price {
+    color: #4663E6;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
 
-    .scroll-button.left {
-      left: -20px;
-    }
+.scroll-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    background: rgb(34, 73, 179);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-    .scroll-button.right {
-      right: -20px;
-    }
+.scroll-button:hover {
+    background: #3257a8;
+}
 
-    .scroll-button i {
-      color: #ffffff;
-    }
+.scroll-button.left {
+    left: -20px;
+}
+
+.scroll-button.right {
+    right: -20px;
+}
+
+.scroll-button i {
+    color: #ffffff;
+}
